@@ -30,8 +30,15 @@ const Header = () => {
             <img src={Logo} alt="" />
           </div>
         </Link>
+        
 
         {/* cart */}
+        <div className="flex flex-row gap-4">
+
+         <div>
+          <button className="py-5 bg-primary hover:bg-opacity-90 shadow-soft-2xl mr-2 flex h-8 items-center w-full  justify-center bg-center stroke-0 text-center xl:py-5 text-white  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5">login</button>
+          </div> 
+        
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative"
@@ -40,6 +47,7 @@ const Header = () => {
           <div className="bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
             {itemAmount}
           </div>
+        </div>
         </div>
       </div>
     </header>
