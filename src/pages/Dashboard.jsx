@@ -33,7 +33,7 @@ const Dashboard = () => {
        <DashoardHeader />
       <Routes>
         <Route path='/'  element={<Home />} />
-        <Route path='/Products' element={<Product />} />
+        <Route path='/product' element={<Product />} />
         <Route path='/addproduct' element={<Addproduct />} />
         <Route path='/setting' element={<Setting />} />
 

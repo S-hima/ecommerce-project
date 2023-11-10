@@ -2,7 +2,7 @@ import React from 'react'
 
 const Addproduct = () => {
   return (
-    <div>Addproduct</div>
+    <div className='mt-top ml-48' >Addproduct</div>
   )
 }
 

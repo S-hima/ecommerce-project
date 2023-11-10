@@ -24,16 +24,12 @@ const DashboardHeader = () => {
 
   return (
     <header
-
+        className="h-20 bg-purple-300"
       
     >
-        <nav className=' w-full flex  bg-purple-500 text-black p-4 fixes top-0'>
-      <h1 className=' w-[50%] flex justify-start ml-4 font-semibold text-sm text-red-700'>
-    
-        
-      </h1>
+        <nav className=' w-full flex  text-black p-4 fixes top-0'>
       
-      <div className="container mx-auto flex items-center justify-between h-full">
+      <div className="container  mx-auto flex items-center justify-between h-full">
         <Link to={"/"}>
           <div className="w-[40px]">
             <img src={Logo} alt="" />
