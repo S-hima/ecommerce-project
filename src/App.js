@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
+import Product from "./components/Product";
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/product/:id" element={<ProductDetails />}></Route>
+          
+       
           
         </Routes>
         <Sidebar />

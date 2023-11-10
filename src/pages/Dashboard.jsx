@@ -1,7 +1,16 @@
 import React from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import Header from '../components/Header';
+import Addproduct from './Admin/Addproduct';
+import Setting from './Admin/Setting';
+import DashoardHeader from '../components/DashoardHeader';
+import DashboardFooter from '../components/DashboardFooter';
+import DashboardSidebar from '../components/DashboardSidebar';
+import Home from './Admin/Home';
+import Product from './Admin/Product';
 
 const Dashboard = () => {
   const navigate =useNavigate();
@@ -18,10 +27,21 @@ const Dashboard = () => {
 
 
   return (
-    <div>WELCOME TO SEEMA'S WORLD
+    <div> 
+            
+      
+       <DashoardHeader />
+      <Routes>
+        <Route path='/'  element={<Home />} />
+        <Route path='/Products' element={<Product />} />
+        <Route path='/addproduct' element={<Addproduct />} />
+        <Route path='/setting' element={<Setting />} />
 
-      <button onClick={handlelogout} className=" py-5  bg-primary hover:bg-opacity-90 shadow-soft-2xl mr-2 flex h-8 items-center w-full  justify-center bg-center stroke-0 text-center xl:py-5 text-white
-         focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5  ">logout</button>
+      </Routes>
+      <DashboardSidebar />
+      <DashboardFooter /> 
+
+
 
 
       
