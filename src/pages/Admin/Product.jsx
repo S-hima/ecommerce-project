@@ -19,6 +19,19 @@ const Product = () => {
 
 
         </thead>
+
+        <tbody>
+          {Products.map(item =>(
+           <tr>
+            <td>{item.name}</td>
+            <td>{item.price}</td>
+            <td>{item.description}</td>
+            <td>{item.categoryn }</td>
+           </tr>
+
+          ))}
+           
+        </tbody>
         </table>
     </div>
   )
