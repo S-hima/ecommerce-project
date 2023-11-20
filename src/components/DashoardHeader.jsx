@@ -24,7 +24,7 @@ const DashboardHeader = () => {
 
   return (
     <header
-        className="h-20 bg-purple-300"
+        className="h-20 bg-purple-300 z-10 "
       
     >
         <nav className=' w-full flex  text-black p-4 fixes top-0'>

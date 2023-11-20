@@ -4,7 +4,7 @@ import Home from '../pages/Home'
 
 const DashboardFooter = () => {
   return (
-    <div> DashboardFooter 
+    <div className='absolute bottom-0'> DashboardFooter 
        
         </div>
   )
