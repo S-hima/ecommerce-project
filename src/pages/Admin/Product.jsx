@@ -9,8 +9,8 @@ const Product = () => {
     setProducts(res.data);
    })
   return (
-    <div className=' ml-48 '>
-      <table>
+    <div className=' ml-48 mx-auto mt-8 container '>
+      <table  className='w-full mt-8 ml-8 mb-4 text-sm font-semibold'>
         <thead>
           <th>productname</th>
           <th>price</th>
